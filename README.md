@@ -16,8 +16,8 @@
 
 ## Exercises
 
-- [Exercise 0: Start a new project folder & Terminal Basics](./exercises/exercise0.md)
-- [Exercise 1: Configure OpenCode](./exercises/exercise1.md)
-- [Exercise 2: Do some planning](./exercises/exercise2.md)
-- [Exercise 3: Spec Driven Development](./exercises/exercise3.md)
+- [Exercise 1: Start a new project folder & Terminal Basics](./exercises/exercise0.md)
+- [Exercise 2: Configure OpenCode](./exercises/exercise1.md)
+- [Exercise 3: Do some planning](./exercises/exercise2.md)
+- [Exercise 4: Spec Driven Development](./exercises/exercise3.md)
 - [Bonus Exercises](./exercises/bonus.md)
