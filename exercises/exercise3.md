@@ -1,90 +1,25 @@
-# Exercise 3: Spec Driven Development
+# Exercise 3: Vibe Code via Prompting
 
-1. Let's create a new project folder & `cd` into the new project folder:
+## Recipe Web APp
 
-    ```bash
-    cd ~
-    mkdir -p workspace/vibecode2
-    cd workspace/vibecode2
-    ```
+1. Let's try to build a simple web app. In OpenCode, type (or just copy & paste) this text into the text box:
 
-2. Initialize Git in this folder:
+    > Build a simple web app where a user types in their current mood (e.g., 'Tired', 'Celebratory', 'Lazy') and the app suggests a 3-ingredient recipe. Make sure to include a photo of the recipe.
 
-    ```bash
-    git init
-    ```
+2. See what happens.
 
-3. Let's install [OpenSpec](https://github.com/Fission-AI/OpenSpec/).
+3. Feel free to tell OpenCode to fix whatever is not working:
 
-    ```bash
-    npm install -g @fission-ai/openspec@latest
-    ```
+    - Image is not showing.
+    - The search box and the result are not aligned.
 
-4. Initialize OpenSpec in this project folder:
+4 Use VScode to see what's being added to the folder.
 
-    ```bash
-    openspec init
-    ```
+5. You can double-click on the `index.html` to see the result in the web browser.
 
-5. Select **OpenCode** as the tool.
+## Things to Ponder
 
-    - Press `<up>` or `<down>` key to find `OpenCode`. 
-    - Press `<space>` key to select the tool. 
-    - Press `<enter>` to confirm the selection.
-
-6. Start **OpenCode** from this project folder.
-
-7. Use this prompt:
-
-    ```
-    /opsx-propose "Build a small web app where a user types in their current mood (e.g., 'Tired', 'Celebratory', 'Lazy') and the app suggests a 3-ingredient recipe."
-    ```
-
-8. Review the artifacts in the `openspec` folder. Use VSCode to open the project folder to review the changes.
-
-9. Chances are, the proposal does not include an image of the recipe.
-
-    ```
-    I would like to include a photo of the recipe in the display page.
-    ```
-
-10. Once you are happy with the proposal, type: `/opsx:apply` to start the implementation.
-
-11. Sometimes things might stall. Just press `<esc>` twice and type: `continue` and press `<enter>` to continue where it hung.
-
-12. Test out the app in a separate terminal.
-
-    ```bash
-    npm start
-    ```
-
-13. If there are bugs or you have ideas to enhance things, just type in the statement into OpenCode:
-
-    ```
-    The images are not showing in the web page
-    The loading spinner and text "Cooking up an idea..." is still showing after i get a recipe.
-    Shall we use recipe photos from Unsplash?
-    ```
-
-    And see how it fixes the problem or enhance the app.
-
-14. Once you are happy, can archive the work:
-
-    ```
-    /opsx:archive
-    ```
-
-## Troubleshooting:
-
-
-If things get stuck, might be due to the application server running in the background.
-
-```
-pa aux | grep node
-```
-
-Find the process number and kill it:
-
-```
-kill -9 1234455
-```
+- How many times if you have to prompt to fix the issues.
+- Do you notice how AI thinks and responds? Does it sound like a junior developer? 
+- The AI model has to be told explicitly what to do.
+- As a free model, the response time is not very fast.
