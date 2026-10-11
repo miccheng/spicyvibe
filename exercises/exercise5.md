@@ -77,8 +77,7 @@ The workflow we will use today:
     Name | Description
     ---- | -----------
     [24-hour Weather Forecast](https://data.gov.sg/datasets?formats=API&sort=relevancy&resultId=d_ce2eb1e307bda31993c533285834ef2b) | Singapore weather forecast API for the next 24 hours. Real-time data from the National Environment Agency (NEA) Meteorological Service Singapore (MSS). Ad-hoc updates may also occur outside the standard cadence.
-    [Pollutant Standards Index (PSI)](https://data.gov.sg/datasets?formats=API&sort=relevancy&resultId=d_fe37906a0182569d891506e815e819b7#GET/psi) | PSI readings are provided for each major region in Singapore.
-    [PM2.5](https://data.gov.sg/datasets?formats=API&sort=relevancy&resultId=d_e1058d6974c877257e32048ab128ad83#GET/pm25) | PM 2.5 readings are provided for each major region in Singapore.
+    [2-hour Weather Forecast](https://data.gov.sg/datasets?formats=API&sort=relevancy&resultId=d_3f9e064e25005b0e42969944ccaf2e7a) | Singapore weather forecast API for the next 2 hours. Real-time data from the National Environment Agency (NEA) Meteorological Service Singapore (MSS). Ad-hoc updates may also occur outside the standard cadence.
 
     Feel free to read through these documents to find out what you can get from these APIs.
 
@@ -89,10 +88,10 @@ The workflow we will use today:
 9. In OpenCode, use this prompt:
 
     ```
-    /opsx-propose "Build a Singapore weather app that will show me the weather, PMI and PM2.5 readings throughout the day. The OpenAPI Specifications for the relevant APIs are included in this folder."
+    /opsx-propose "Build a Singapore weather app that will show me the weather throughout the day. The OpenAPI Specifications for the relevant APIs are included in this folder."
     ```
 
-10. OpenSpec generates a bunch of artifacts as part of its planning (i.e. a bunch Markdown files are created in the `openspec` folder. Review the Markdown files using VSCode.
+10. OpenSpec generates a bunch of artifacts as part of its planning (i.e. a bunch Markdown files are created in the `openspec` folder). Review the Markdown files using VSCode.
 
 11. Chances are, the proposal may be missing some things. Feel free to edit them in VSCode.
 
@@ -117,21 +116,30 @@ The workflow we will use today:
     Let's commit the changes to Git.
     ```
 
-## Change request: Add Visualisation
+## Change Request 1: Add PSI & PM 2.5 Readings
 
-18. Let's implement some visualisation.
+18. We'll be using the PSI & PM 2.5 readings from [Data.gov.sg](https://data.gov.sg/).
+
+    Go to each of the following site below and click on "Download API Specs" on each of the page. Save the files into the `weather_app` folder (i.e. `Desktop/vibeprojects/weather_app`).
+
+    Name | Description
+    ---- | -----------
+    [Pollutant Standards Index (PSI)](https://data.gov.sg/datasets?formats=API&sort=relevancy&resultId=d_fe37906a0182569d891506e815e819b7#GET/psi) | PSI readings are provided for each major region in Singapore.
+    [PM2.5](https://data.gov.sg/datasets?formats=API&sort=relevancy&resultId=d_e1058d6974c877257e32048ab128ad83#GET/pm25) | PM 2.5 readings are provided for each major region in Singapore.
+
+    Feel free to read through these documents to find out what you can get from these APIs.
+
+19. In OpenCode, use this prompt:
 
     ```
-    /opsx-propose "Let's beautify the app with some visualisation of the data. Let's use a vector map to represent singapore and the weather in different regions"
+    /opsx-propose "Add the air quality indices: PSI and PM 2.5 readings to the dashboard. The OpenAPI Specifications for the relevant APIs are included in this folder."
     ```
 
-19. Inspec the proposed plan in the `openspec` folder. Review the Markdown files using VSCode.
+20. Inspec the proposed plan in the `openspec` folder. Review the Markdown files using VSCode.
 
-20. Once you are happy with the proposal, type (in OpenCode): `/opsx-apply` to start the implementation.
+21. Once you are happy with the proposal, type (in OpenCode): `/opsx-apply` to start the implementation.
 
-21. View and verify the final implementation in the browser.
-
-22. Once you are happy, can sync & archive the work:
+22. Once you are happy with this iteration, just sync and archive the work:
 
     ```
     /opsx-sync
@@ -139,6 +147,33 @@ The workflow we will use today:
     ```
 
 23. Let's commit the changes to Git. In OpenCode, type:
+
+    ```
+    Let's commit the changes to Git.
+    ```
+
+## Change Request 2: Add Visualisation (optional)
+
+24. Let's implement some visualisation.
+
+    ```
+    /opsx-propose "Let's beautify the app with some visualisation of the data. Let's use a vector map to represent singapore and the weather in different regions"
+    ```
+
+25. Inspec the proposed plan in the `openspec` folder. Review the Markdown files using VSCode.
+
+26. Once you are happy with the proposal, type (in OpenCode): `/opsx-apply` to start the implementation.
+
+27. View and verify the final implementation in the browser.
+
+28. Once you are happy, can sync & archive the work:
+
+    ```
+    /opsx-sync
+    /opsx-archive
+    ```
+
+29. Let's commit the changes to Git. In OpenCode, type:
 
     ```
     Let's commit the changes to Git.
