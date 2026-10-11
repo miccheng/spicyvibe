@@ -1,4 +1,4 @@
-# Exercise 5: Spec Driven Development
+# Exercise 5: Vibe Code via Spec Driven Development
 
 1. Let's create a new project folder & `cd` into the new project folder:
 
