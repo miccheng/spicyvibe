@@ -16,8 +16,9 @@
 
 ## Exercises
 
-- [Exercise 1: Start a new project folder & Terminal Basics](./exercises/exercise0.md)
-- [Exercise 2: Configure OpenCode](./exercises/exercise1.md)
-- [Exercise 3: Do some planning](./exercises/exercise2.md)
-- [Exercise 4: Spec Driven Development](./exercises/exercise3.md)
+- [Exercise 1: Start a new project folder & Terminal Basics](./exercises/exercise1.md)
+- [Exercise 2: Start and Configure OpenCode](./exercises/exercise2.md)
+- [Exercise 3: Vibe Code via Prompting](./exercises/exercise3.md)
+- [Exercise 4: Vibe Code via Plan Mode](./exercises/exercise4.md)
+- [Exercise 5: Vibe Code via Spec Driven Development](./exercises/exercise5.md)
 - [Bonus Exercises](./exercises/bonus.md)
