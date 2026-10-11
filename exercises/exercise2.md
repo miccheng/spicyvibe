@@ -1,59 +1,58 @@
-# Exercise 2: Do some planning
+# Exercise 2: Start and Configure OpenCode
 
-1. After installing OpenCode, open your terminal and change to your working directory (you can create a new folder too).
+1. Make sure you are logged in to an OpenCode account (its free to create a [OpenCode Console](https://opencode.ai/console) account).
 
-    ```bash
-    cd ~
-    mkdir -p workspace/vibecode1
-    cd workspace/vibecode1
+    - Type: `opencode auth login opencode`
+    - Select: `OpenCode Console account`
+    - Create or login to your OpenCode account.
+    - Click on `Authorize` on the OpenCode website.
+    - You should see:
+
+        ```
+        Device authorized
+        You can return to your terminal.
+        ```
+2. In the Terminal / Console, make sure you are in the `vibeprojects` directory.
+
+    > _**Tip:** Use the commands showns in [Exercise 0](./exercise0.md)._
+
+3. To start OpenCode, type: `opencode`
+
+4. Select one of the free AI models:
+
+    - Type: `/models`
+    - Select one of the Free models. 
+        > _**Note:** The list of available free models may vary depending on OpenCode's service load. Just pick anyone that's available today._
+
+5. Initialize the project folder: Type `/init` and press `Enter`.
+
+    This creates an AGENTS.md file, which is the "brain" OpenCode uses to understand your specific codebase.
+
+6. Try to prompt for something:
+
+    ```
+    How many "R"s are there in the word strawberry?
     ```
 
-2. Type `opencode` to start the OpenCode TUI.
-
-3. Initialize Project: Navigate to your project folder and run opencode `/init`. This creates an AGENTS.md file, which is the "brain" OpenCode uses to understand your specific codebase.
-
-## Plan Mode
-
-OpenCode has a *Plan mode* that disables its ability to make changes and instead suggest how it’ll implement the feature.
-
-1. Press the `<tab>` key to enter *Plan Mode*.
-
-2. Let's try to build a simple tic tac toe game.
-
-    Copy and paste this into your OpenCode chat box:
+    You should see a response like this:
 
     ```
-    I want to build a simple Tic Tac Toe game that runs in the terminal.
-
-    Before writing any code:
-
-    1. Define the requirements and game rules.
-    2. Identify the main components and data structures needed.
-    3. Describe the game flow from start to finish.
-    4. List the functions/classes that should be implemented and their responsibilities.
-    5. Identify edge cases and error handling requirements.
-    6. Propose a simple project structure.
-    7. Create an implementation plan broken into small, testable steps.
-
-    Keep the design simple and suitable for a beginner developer. Do not generate code yet—focus only on planning and architecture.
+    There are 3 "R"s in the word "strawberry".
+    The words break down like this:
+    - s-t-r-a-w-b-e-**r}-{r}-y
+    All three "r"s appear as part of the spelling of these berry-related words.
     ```
 
-3. Follow the on screen instructions and let's see what it builds.
+## Pro-Tip: Using a Paid AI Model
 
-4. You can chat and discuss changes if you don't agree with anything that was suggested.
+Once you get more experienced, you can also choose some other paid models.
 
-5. Remember to exit *Plan Mode* before executing (press `<tab>` key again).
+1. Press: `ctrl` + `p` to access the **Commands** option.
 
-    Copy and paste this into your OpenCode chat box:
-    
-    ```
-    Let's go
-    ```
+2. Select `Connect Provider` to connect to a LLM (Large Language Model) provider.
 
-6. Use VScode to see what's being added to the folder.
+    > **Pro-Tip:** Type `/connect` to get to this command
 
-7. Can proceed to play the game in terminal (you can open a new terminal tab).
+3. Select one of the Providers.
 
-8. You can exit the OpenCode by typing: `exit` and press `<enter>`.
-
-    > **Pro-Tip:** Notice that you can get back into the same session with the command shown on screen.
+4. After you have connected to your LLM provider, go to **Commands** option and select `Switch Model` to select your LLM model.

@@ -1,54 +1,51 @@
-# Exercise 1: Start and Configure OpenCode
+# Exercise 1: Start a new project folder & Terminal Basics
 
-1. Make sure you are logged in to an OpenCode account (its free to create a [OpenCode Console](https://opencode.ai/console) account).
+1. Let's get started with a new project folder:
 
-    - Type: `opencode auth login opencode`
-    - Select: `OpenCode Console account`
-    - Create or login to your OpenCode account.
-    - Click on `Authorize` on the OpenCode website.
-    - You should see:
+    - On your MacOS / Windows Desktop, create a new folder called `vibeprojects` (no spaces).
 
-        ```
-        Device authorized
-        You can return to your terminal.
-        ```
-2. In the Terminal / Console, make sure you are in the `vibeprojects` directory.
+2. Open the new folder in your Terminal / Console:
 
-    > _**Tip:** Use the commands showns in [Exercise 0](./exercise0.md)._
+    - Right click on the new folder and select:
+        - MacOS: `services` > `New Terminal at Folder`
+        - Windows: `TBC`
 
-3. To start OpenCode, type: `opencode`
+3. Figure out what's the path of this folder.
 
-4. Select one of the free AI models:
+    - MacOS: Type `pwd`
+    - Windows: Type `cd`
 
-    - Type: `/models`
-    - Select one of the Free models. 
-        > _**Note:** The list of available free models may vary depending on OpenCode's service load. Just pick anyone that's available today._
+    Take note of this path.
 
-5. Try to prompt for something:
+4. To open this folder in [VSCode](https://code.visualstudio.com/), type: `code .`
 
-    ```
-    How many "R"s are there in the word strawberry?
-    ```
+    > Tip: Can refer to this [page](https://code.visualstudio.com/docs/configure/command-line?referrer=vsc-search#_launching-from-command-line) on how to add the `code` CLI to your Terminal.
 
-    You should see a response like this:
+5. You can also use the [Integrated Terminal](https://code.visualstudio.com/docs/terminal/getting-started) in VSCode.
 
-    ```
-    There are 3 "R"s in the word "strawberry".
-    The words break down like this:
-    - s-t-r-a-w-b-e-**r}-{r}-y
-    All three "r"s appear as part of the spelling of these berry-related words.
-    ```
+    - From the VSCode menu bar, select: `View` > `Terminal`
 
-## Pro-Tip: Using a Paid AI Model
+6. Do try out some of the Terminal / Console commands below.
 
-Once you get more experienced, you can also choose some other paid models.
+## Terminal Commands (Linux and MacOS)
 
-1. Press: `ctrl` + `p` to access the **Commands** option.
+Command | Example | Description
+------- | ------- | -----------
+`pwd` |  | Present working directory - the folder where you are operating from.
+`ls` | `ls -al` | List files in the present directory. <br> `-a` - Include directory entries whose names begin with a dot (‘.’). <br> `-l` - (The lowercase letter “ell”.) List files in the long format.
+`cd` | `cd exercises` | Change Directory. The example includes the directory name you want to switch to. <br> To change to the parent directory, use `cd ..` where the 2 `..` refers to the parent folder.
+`mkdir` | `mkdir app1` | Creates the folder.
+`rm` | `rm badfile.txt`<br> `rm -r badfolder` | To permanently delete a file or directory. To remove a folder, `rm -r <folder_name>`. Be careful as this is a permanent operation.
 
-2. Select `Connect Provider` to connect to a LLM (Large Language Model) provider.
+Anytime you are not sure about how to use a Terminal command, add `--help` to the command to see some helpful tips.
 
-    > **Pro-Tip:** Type `/connect` to get to this command
+## Windows Console Commands
 
-3. Select one of the Providers.
-
-4. After you have connected to your LLM provider, go to **Commands** option and select `Switch Model` to select your LLM model.
+Command | Example | Description
+------- | ------- | -----------
+`cd` |  | Present working directory - the folder where you are operating from.
+`dir` | `dir` | List files in the present directory. <br> `-a` - Include directory entries whose names begin with a dot (‘.’). <br> `-l` - (The lowercase letter “ell”.) List files in the long format.
+`cd` | `cd exercises` | Change Directory. The example includes the directory name you want to switch to. <br> To change to the parent directory, use `cd ..` where the 2 `..` refers to the parent folder.
+`mkdir` | `mkdir app1` | Creates the folder.
+`del` | `del badfile.txt` | To permanently delete a file. Be careful as this is a permanent operation.
+`rmdir` | `rmdir badfolder` | To permanently delete a folder. Be careful as this is a permanent operation.
