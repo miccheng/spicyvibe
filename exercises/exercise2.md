@@ -14,7 +14,7 @@
         ```
 2. In the Terminal / Console, make sure you are in the `vibeprojects` directory.
 
-    > _**Tip:** Use the commands showns in [Exercise 0](./exercise0.md)._
+    > _**Tip:** Use the commands showns in [Exercise 1](./exercise1.md)._
 
 3. To start OpenCode, type: `opencode`
 
