@@ -12,6 +12,8 @@
 
 3. [Git - Version Control Software](https://git-scm.com/)
 
+4. [NodeJS](https://nodejs.org) - We'll need this for exercise 5.
+
 4. [GitHub account](https://github.com) (Optional)
 
 ## Exercises

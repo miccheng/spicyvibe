@@ -4,20 +4,29 @@
 
     - On your MacOS / Windows Desktop, create a new folder called `vibeprojects` (no spaces).
 
-2. Open the new folder in your Terminal / Console:
+2. Open the new folder in your Terminal / Command Prompt:
 
-    - Right click on the new folder and select:
-        - MacOS: `services` > `New Terminal at Folder`
-        - Windows: `TBC`
+    - MacOS: 
+        - Right click on the new folder (`vibeprojects`) 
+        - Select: `services` > `New Terminal at Folder`
+    - Windows:
+        - Double-click on the new folder (`vibeprojects`) to open in **File Explorer**.
+        - Press: `Alt` + `d` (or click on the Address Bar)
+        - Type: `cmd`
+        - Press: `<enter>`
 
 3. Figure out what's the path of this folder.
 
     - MacOS: Type `pwd`
     - Windows: Type `cd`
 
-    Take note of this path.
+    Take note of this path (E.g. `/Users/miccheng/Desktop/vibeprojects`).
 
-4. To open this folder in [VSCode](https://code.visualstudio.com/), type: `code .`
+4. To open this folder in [VSCode](https://code.visualstudio.com/), type: 
+
+    ```bash
+    code .
+    ```
 
     > Tip: Can refer to this [page](https://code.visualstudio.com/docs/configure/command-line?referrer=vsc-search#_launching-from-command-line) on how to add the `code` CLI to your Terminal.
 
@@ -39,7 +48,7 @@ Command | Example | Description
 
 Anytime you are not sure about how to use a Terminal command, add `--help` to the command to see some helpful tips.
 
-## Windows Console Commands
+## Windows Command Prompt Commands
 
 Command | Example | Description
 ------- | ------- | -----------
