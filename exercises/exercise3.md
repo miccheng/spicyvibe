@@ -30,7 +30,7 @@ The instruction we give to AI in a natual language is called a "prompt" - as in 
 
 - How many times did you have to prompt to fix the issues.
 - Do you notice how AI thinks and responds? Does it sound like a junior developer?
-- Somethimes the AI surprises you with its thinking. Soemtiems it has to be told explicitly what to do.
+- Sometimes the AI surprises you with its thinking. Sometimes it has to be told explicitly what to do.
 - Also, as a free model, the response time is not very fast.
 
 [Next Exercise >>](./exercise4.md)

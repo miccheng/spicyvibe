@@ -39,7 +39,7 @@ OpenCode has a *Plan mode* that disables its ability to make changes and instead
 
 4. You can chat and discuss changes if you don't agree with anything that was suggested.
 
-5. Remember to exit *Plan Mode* before executing (press `<shift>` + `<tab>` key again).
+5. Remember to switch back to *Build Mode* before executing (press `<shift>` + `<tab>` key again).
 
     Copy and paste this into your OpenCode chat box:
     
