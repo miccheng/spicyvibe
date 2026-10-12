@@ -58,3 +58,5 @@ Command | Example | Description
 `mkdir` | `mkdir app1` | Creates the folder.
 `del` | `del badfile.txt` | To permanently delete a file. Be careful as this is a permanent operation.
 `rmdir` | `rmdir badfolder` | To permanently delete a folder. Be careful as this is a permanent operation.
+
+[Next Exercise >>](./exercise2.md)

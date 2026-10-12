@@ -56,3 +56,5 @@ Once you get more experienced, you can also choose some other paid models.
 3. Select one of the Providers.
 
 4. After you have connected to your LLM provider, go to **Commands** option and select `Switch Model` to select your LLM model.
+
+[Next Exercise >>](./exercise3.md)

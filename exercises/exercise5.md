@@ -198,3 +198,5 @@ kill -9 1234455
 - How do you feel about the level of detail exposed to you in the SDD approach?
 - Do you have more confidence in AI implementing the right thing?
 - How might you apply this to your team or workplace?
+
+[Bonus Exercise >>](./bonus.md)

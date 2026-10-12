@@ -65,3 +65,5 @@ OpenCode has a *Plan mode* that disables its ability to make changes and instead
 - There are fewer back and forth discussion on what to build.
 - There are still some visual bugs that AI can't "see".
 - You can find out more about Plan Mode [here](https://opencode-tutorial.com/en/docs/modes) and [here](https://www.aihero.dev/plan-mode-introduction).
+
+[Next Exercise >>](./exercise5.md)

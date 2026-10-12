@@ -32,3 +32,5 @@ The instruction we give to AI in a natual language is called a "prompt" - as in 
 - Do you notice how AI thinks and responds? Does it sound like a junior developer?
 - Somethimes the AI surprises you with its thinking. Soemtiems it has to be told explicitly what to do.
 - Also, as a free model, the response time is not very fast.
+
+[Next Exercise >>](./exercise4.md)
