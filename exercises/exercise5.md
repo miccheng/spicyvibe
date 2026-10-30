@@ -116,6 +116,8 @@ The workflow we will use today:
     Let's commit the changes to Git.
     ```
 
+![Weather App](./images/weather-app1.png)
+
 ## Change Request 1: Add PSI & PM 2.5 Readings
 
 18. We'll be using the PSI & PM 2.5 readings from [Data.gov.sg](https://data.gov.sg/).
