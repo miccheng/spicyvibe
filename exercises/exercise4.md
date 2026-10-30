@@ -59,6 +59,8 @@ OpenCode has a *Plan mode* that disables its ability to make changes and instead
 
     How might you prompt the AI to add these things?
 
+![Tic Tac Toe](./images/tic-tac-toe.png)
+
 ## Things to Ponder
 
 - Did you notice the implementation is closer to what you had in mind because the AI asked you some questions first?

@@ -26,7 +26,7 @@ The instruction we give to AI in a natual language is called a "prompt" - as in 
 
 5. You can double-click on the `index.html` to see the result in the web browser.
 
-![Tic Tac Toe](./images/tic-tac-toe.png)
+![Groceries List](./images/grocery-list.png)
 
 ## Things to Ponder
 
